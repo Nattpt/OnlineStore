@@ -1,32 +1,30 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device.with, initial-scale=1.0">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device.with, initial-scale=1.0">
 
-        <!--  Bootstrap CSS -->
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <!--  Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
 
 
 
-        <title></title>
-        <!-- 
-            DES322 Class-08
-            StudentID: 62222780544
-            Student Name:Nattapat Panchavinin
-            TA Group DES322 G4 TA Titipakorn Prakayapan
-            Digital Business: An online for selling surfskates
-            Created Date: 14-Oct-2021
-        -->
-        <style>
-        .access-point1{border: 1px solid black; height: 100px; text-align: center; background-color: grey;}
-        .access-point2{border: 1px solid black; height: 200px; text-align: center; background-color: lemonchiffon;}
-        </style>
-    </head>
+    <title></title>
+    <!-- 
+        DES322 Class-08
+        StudentID: 62222780544
+        Student Name:Nattapat Panchavinin
+        TA Group DES322 G4 TA Titipakorn Prakayapan
+        Digital Business: An online for selling surfskates
+        Created Date: 14-Oct-2021
+    -->
 
-    <body style="background: repeating-linear-gradient(	#bbeaff 23.1%, 	#bbeaff 49.9%,#FED7C2 50.1%, #FED7C2 100%);">
+</head>
+
+<body>
+    <body style="background-color:  #FED7C2;">
         <div h1="site-header" >
             <!-- Header -->
             <style>
@@ -42,65 +40,75 @@
                     color: #be5504;
                 }
             </style>
-            <nav class="navbar navbar-expand-sm" style="background-color: #fde3e9;">
-                <ul class="nav">
-
-                    <li class="nav-item">
-                        
-                    <a class="nav-link active" href="index.html">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="category.html">Category</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">My Course</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">For Sellers</a>
-                    </li>
-                    <li class="navbar-brand" style="color: #be5504;">
-                        <p>Follow us on :</p>
-                    </li>
-                    <li class="navbar-brand" href="/" style="width: 36px;height: 36px;">
-                        <div class="logo-image">
-                            <img src="image\fb.png" class="img-fluid">
-                        </div>
-                    </li>
-                    <li class="navbar-brand" href="/" style="width: 36px;height: 36px;">
-                        <div class="logo-image">
-                            <img src="image\ig.png" class="img-fluid">
-                        </div>
-                    </li>
-                    <li class="navbar-brand" href="/" style="width: 36px;height: 36px;">
-                        <div class="logo-image">
-                            <img src="image\twt.png" class="img-fluid">
-                        </div>
-                    </li>
-                </ul>
-                <ul class="navbar-nav ml-auto">
-
-                
-                    <li class="navbar-brand" href="/" style="width: 36px;height: 36px;">
-                        <div class="logo-image">
-                            <img src="image\user.png" class="img-fluid">
-                        </div>
-                    </li>
-                    <li class="nav-item">
-                    <a class="btn btn-primary btn-large" style="background-color: #f6acac; color:black; width: 100px;height: 40px;" href="#">
-                        Sign up!</a>
-                    <p><u class="text" style="color: hsl(300, 95%, 66%);  padding-right: 50px;">Login</u></p>
-                    </li>
-                </ul>
+            
+            <div class="app_container">
+                <div id="app">
+            <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #fde3e9; ">
+                <div class="container-fluid">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item" v-on:click="ShowHomePage">
+                                <a class="nav-link active" style="color:#be5504;" aria-current="page" href="#">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" style="color:#be5504;" href="category.html">Category</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" style="color:#be5504;" href="#">My Course</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" style="color:#be5504;" href="#">For Sellers</a>
+                            </li>
+                            <li class="navbar-brand" style="color: #be5504;">
+                                <p>Follow us on :</p>
+                            </li>
+                            <li class="navbar-brand" href="/" style="width: 36px;height: 36px;">
+                                <div class="logo-image">
+                                    <img src="image\fb.png" class="img-fluid">
+                                </div>
+                            </li>
+                            <li class="navbar-brand" href="/" style="width: 36px;height: 36px;">
+                                <div class="logo-image">
+                                    <img src="image\ig.png" class="img-fluid">
+                                </div>
+                            </li>
+                            <li class="navbar-brand" href="/" style="width: 36px;height: 36px;">
+                                <div class="logo-image">
+                                    <img src="image\twt.png" class="img-fluid">
+                                </div>
+                            </li>
+                        </ul>
+                        <ul class="navbar-nav ml-auto">
         
+                        
+                            <li class="navbar-brand" href="/" style="width: 36px;height: 36px;">
+                                <div class="logo-image">
+                                    <img src="image\user.png" class="img-fluid">
+                                </div>
+                            </li>
+                            <li class="nav-item">
+                            <a class="btn btn-primary btn-large" style="background-color: #f6acac; color:black; width: 100px;height: 40px;" href="#">
+                                Sign up!</a>
+                            <p><u class="text" style="color: hsl(300, 95%, 66%);  padding-right: 50px;">Login</u></p>
+                            </li>
+                        </ul>
 
+                        </ul>
+                    </div>
+                </div>
             </nav>
             <br><br>
             <h1 class="jumbotron-heading" style="color: #be5504;">&emsp;Cooking C Cafe</h1>
             <ul class="nav-item" style="float: right; padding-right: 20px;">
-                <a class="btn btn-primary btn-large" style=" background-color: #f6acac; color:black; width: 110px;height: 110px;" href="#">
+                <li class="nav-item" v-on:click="ShowMyCart" style="list-style: none">
+                <a class="btn btn-primary btn-large" style=" background-color: #f6acac; color:black; width: 150px;height: 110px;" href="#">
                     <img src="image\cart.png" width="70" height="70">
-                    <p>Your Cart</p>        
+                        <p class="nav-link" style="color:black;" href="#">My Cart ({{countitem}})</p>    
                 </a>
+            </li> 
             </ul>
             
             <label>&emsp;&emsp;</label>
@@ -125,235 +133,324 @@
     </form>
     <br><br><br>
         <div name="site-nav" class="">
-            <div class="container">
-                <div class="row">
-                <div class="col-md-6">
-                    <h1 style="color: hsl(310, 87%, 74%); text-align: center;">Our New Courses</h1>
-                    <br>
-                    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-                        <ol class="carousel-indicators">
-                            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-                            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-                            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-                        </ol>
-                        <div class="carousel-inner">
-                            <div class="carousel-item active">
-                                <img class="d-block w-100" src="image\c5.jpg" alt="First slide" />
-                            </div>
-                            <div class="carousel-item">
-                                <img class="d-block w-100" src="image\c7.jpg" alt="Second slide" />
-                            </div>
-                            <div class="carousel-item">
-                                <img class="d-block w-100" src="image\c9.jpg" alt="Third slide" />
-                            </div>
-                        </div>
-                        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                            <span class="sr-only">Previous</span>
-                        </a>
-                        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                            <span class="sr-only">Next</span>
-                        </a>
-                    </div>
-                    
-                </div>
-                <div class="col-md-6">
-                    <div class="container">
-                        <br><br><br>
-                        <div class="row">
-                            <div class="col-sm" style="border: 1px solid grey; height: 400px; text-align: center; height: 10rem; background: black;" >
-                                <h4 class="jumbotron-heading" style="color: yellow;">Hot Course this Week</h4>
-                                <img src="image\c1.jpg" style="width:150px;height:100px; float:left" />
-                                <label>
-                                    <div class="text" style="color: yellow; text-align: left;">
-                                        <p>Course : Grand Master Class<br>by Gorgon Ramzee<br>WHOPPING 60 HOURS!
-                                        <br>
-                                        <a href="product_details.html" class="btn btn-primary my-2" style="background-color: yellow; color: black;">Click for details</a>
-                                        </p>
-                                        
-                                    </div>
-                                </label>
-                            </div>
-                        </div>
-                        <br>
-                        <div class="row">
-                            <div class="col-sm" style="border: 1px solid grey; height: 400px; text-align: center; height: 10rem; background: rgb(253, 159, 122);" >
-                                <h4 class="jumbotron-heading text-success">Sales Up to 70%!!!</h4>
-                                <img src="image\c2.jpg" style="width:150px;height:100px; float:left" />
-                                <label>
-                                    <div class="text" style="color: green; text-align: left;">
-                                        <p>Course : Thai Soup<br>by Kru Anon<br>3 Days Left!
-                                        <br>
-                                        <a href="product_details.html" class="btn btn-primary my-2" style="background-color: green; color: #f6acac;">Click for details</a>
-                                        </p>
-                                        
-                                    </div>
-                                </label>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>            
-        </div>
-        <br><br><br><br><br>
-        <div name="site-cate" class="">
-            <!-- Video and Product Catagories -->
-            <h1 style=" text-align: center; color: #be5504;">Top Rated</h1>
-            <h1 style=" text-align: center; color: #be5504;">Change something</h1>
-            <br><br><br>
-            <div class="container-fluid">
-                <div class="row">
-                    <div class="col">
-                        <div class="card" style="background: linear-gradient(to top right, #ff99cc 0%, #ffffff 100%);">
-                            <img class="card-img-top" alt="Bootstrap Thumbnail First" src="image\c3.jpg" style="width:230px;height:150px;"/>
-                            <div class="card-block">
-                                <h5 class="card-title">
-                                    Course X
-                                </h5>
-                                <img src="image\star.png" class="img-fluid" style="width: 150px; height: 30px; float: center;">
-                                <p class="card-text">
-                                    &emsp;Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.
-                                </p>
-                                <p>
-                                <a class="btn btn-primary" href="#" style="color:black; background: linear-gradient(to top, #ffcc00 0%, #ffffff 100%);">Add to Cart</a> <a class="btn" href="#" style="border: 1px solid grey; background-color:white;">Details</a>
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="card" style="background: linear-gradient(to top right, #ff99cc 0%, #ffffff 100%);">
-                            <img class="card-img-top" alt="Bootstrap Thumbnail First" src="image\c4.jpg" style="width:230px;height:150px; "/>
-                            <div class="card-block">
-                                <h5 class="card-title">
-                                    Course X
-                                </h5>
-                                <img src="image\star.png" class="img-fluid" style="width: 150px; height: 30px; float: center;">
-                                <p class="card-text">
-                                    &emsp;Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.
-                                </p>
-                                <p>
-                                    &emsp;<a class="btn btn-primary" href="#" style="color:black; background: linear-gradient(to top, #ffcc00 0%, #ffffff 100%);">Add to Cart</a> <a class="btn" href="#" style="border: 1px solid grey; background-color:white;">Details</a>
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="card" style="background: linear-gradient(to top right, #ff99cc 0%, #ffffff 100%);">
-                            <img class="card-img-top" alt="Bootstrap Thumbnail First" src="image\c5.jpg" style="width:230px;height:150px;"/>
-                            <div class="card-block">
-                                <h5 class="card-title">
-                                    Course X
-                                </h5>
-                                <img src="image\star.png" class="img-fluid" style="width: 150px; height: 30px; float: center;">
-                                <p class="card-text">
-                                    &emsp;Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.
-                                </p>
-                                <p>
-                                    &emsp;<a class="btn btn-primary" href="#" style="color:black; background: linear-gradient(to top, #ffcc00 0%, #ffffff 100%);">Add to Cart</a> <a class="btn" href="#" style="border: 1px solid grey; background-color:white;">Details</a>
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="card" style="background: linear-gradient(to top right, #ff99cc 0%, #ffffff 100%);">
-                            <img class="card-img-top" alt="Bootstrap Thumbnail First" src="image\c8.jpg" style="width:230px;height:150px;"/>
-                            <div class="card-block">
-                                <h5 class="card-title">
-                                    Course X
-                                </h5>
-                                <img src="image\star.png" class="img-fluid" style="width: 150px; height: 30px; float: center;">
-                                <p class="card-text">
-                                    &emsp;Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.
-                                </p>
-                                <p>
-                                    &emsp;<a class="btn btn-primary" href="#" style="color:black; background: linear-gradient(to top, #ffcc00 0%, #ffffff 100%);">Add to Cart</a> <a class="btn" href="#" style="border: 1px solid grey; background-color:white;">Details</a>
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="card" style="background: linear-gradient(to top right, #ff99cc 0%, #ffffff 100%);">
-                            <img class="card-img-top" alt="Bootstrap Thumbnail First" src="image\c9.jpg" style="width:230px;height:150px;" />
-                            <div class="card-block">
-                                <h5 class="card-title">
-                                    Course X
-                                </h5>
-                                <img src="image\star.png" class="img-fluid" style="width: 150px; height: 30px; float: center;">
-                                <p class="card-text">
-                                    &emsp;Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.
-                                </p>
-                                <p>
-                                    &emsp;<a class="btn btn-primary" href="#" style="color:black; background: linear-gradient(to top, #ffcc00 0%, #ffffff 100%);">Add to Cart</a> <a class="btn" href="#" style="border: 1px solid grey; background-color:white;">Details</a>
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="card" style="background: linear-gradient(to top right, #ff99cc 0%, #ffffff 100%);">
-                            <img class="card-img-top" alt="Bootstrap Thumbnail First" src="image\c10.jpg" style="width:230px;height:150px;"/>
-                            <div class="card-block">
-                                <h5 class="card-title">
-                                    Course X
-                                </h5>
-                                <img src="image\star.png" class="img-fluid" style="width: 150px; height: 30px; float: center;">
-                                <p class="card-text">
-                                    &emsp;Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.
-                                </p>
-                                <p>
-                                    &emsp;<a class="btn btn-primary" href="#" style="color:black; background: linear-gradient(to top, #ffcc00 0%, #ffffff 100%);">Add to Cart</a> <a class="btn" href="#" style="border: 1px solid grey; background-color:white;">Details</a>
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-        
-        </div>
-        <br><br><br><br><br><br>
-
-        <div name="site-footer" style="border: 1px solid #be5504; text-align: left; background-color: #FFD1DC; padding-left: 100px;">
-            <div class="container-fluid">
-                <div class="row">
+            
+    
+            
+            <div class="container" style="margin-top : 30px;" v-if="product_page">
+                <div class="container" style="background-color: #bbeaff; width:100%; height: 500px; float: center;">
+                    <div class="row">
                     <div class="col-md-6">
+                        <h1 style="color: hsl(310, 87%, 74%); text-align: center;">Our New Courses</h1>
                         <br>
-                        <h3 style="color: #be5504;">
-                            About Cooking C Cafe
-                        </h3>
-                        
-                        <br>
-                        <p style="color: #be5504;">
-                            Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.
-                        </p>
-                        <p>
-                            <a class="btn" href="#"style="color: #be5504;">View details »</a>
-                        </p>
-                    </div>
-                <div class="col-md-6">
-                    <ul class="nav-item" style="float: right; padding-right: 200px;">
-                        
-                        <label>
-                            <div class="text" style="color: #ff99cc;">
-                                <h5><br><br>Subscribe for our<br>Latest Courses</h5>
+                        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                            <ol class="carousel-indicators">
+                                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                            </ol>
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img class="d-block w-100" src="image\c5.jpg" alt="First slide" />
+                                </div>
+                                <div class="carousel-item">
+                                    <img class="d-block w-100" src="image\c7.jpg" alt="Second slide" />
+                                </div>
+                                <div class="carousel-item">
+                                    <img class="d-block w-100" src="image\c9.jpg" alt="Third slide" />
+                                </div>
                             </div>
-                        </label>
-                        <img src="image\mail.png" width="150" height="80" style="padding-left: 30px;">
-                        <br>
-                        <form action="/action_page.php">
-                            <label for="email">Email Address:</label><br>
-                            <input type="text" id="email" name="fname" value="Enter your Email">
-                            <input type="submit" value="Submit">
-                        </form> 
-                    </ul>
+                            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Previous</span>
+                            </a>
+                            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Next</span>
+                            </a>
+                        </div>
+                        
+                    </div>
+                    <div class="col-md-6">
+                        <div class="container">
+                            <br><br><br>
+                            <div class="row">
+                                <div class="col-sm" style="border: 1px solid grey; height: 400px; text-align: center; height: 10rem; background: black;" >
+                                    <h4 class="jumbotron-heading" style="color: yellow;">Hot Course this Week</h4>
+                                    <img src="image\c1.jpg" style="width:150px;height:100px; float:left" />
+                                    <label>
+                                        <div class="text" style="color: yellow; text-align: left;">
+                                            <p>Course : Grand Master Class<br>by Gorgon Ramzee<br>WHOPPING 60 HOURS!
+                                            <br>
+                                            <a href="product_details.html" class="btn btn-primary my-2" style="background-color: yellow; color: black;">Click for details</a>
+                                            </p>
+                                            
+                                        </div>
+                                    </label>
+                                </div>
+                            </div>
+                            <br>
+                            <div class="row">
+                                <div class="col-sm" style="border: 1px solid grey; height: 400px; text-align: center; height: 10rem; background: rgb(253, 159, 122);" >
+                                    <h4 class="jumbotron-heading text-success">Sales Up to 70%!!!</h4>
+                                    <img src="image\c2.jpg" style="width:150px;height:100px; float:left" />
+                                    <label>
+                                        <div class="text" style="color: green; text-align: left;">
+                                            <p>Course : Thai Soup<br>by Kru Anon<br>3 Days Left!
+                                            <br>
+                                            <a href="product_details.html" class="btn btn-primary my-2" style="background-color: green; color: #f6acac;">Click for details</a>
+                                            </p>
+                                            
+                                        </div>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>            
+            </div>
+            <br><br><br><br><br>
+                <h1 style=" text-align: center; color: #be5504;">Top Rated</h1>
+                <hr/>
+                <div class="home container">
+                    <div class="row">
+                        <div class="col-md-12 pt-5">
+                            <div class="row equal row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 row-cols-xl-4">
+                                <Product v-on:add-item="addItem" v-for="product in products" :product="product" :key="product.id" />
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
+            
+
+            <div class="container" style="margin-top : 30px;" v-if="cart_page">
+                <h1 style=" text-align: center; color: #be5504;">Your Cart</h1>
+                <hr/>
+                <div class="home container">
+                    <div class="row">
+                        <div class="col-md-12 pt-5">
+                            <CartItem v-on:remove-item="removeItem" v-for="item in cart" :item="item" :key="item.id" />
+                        </div>
+                    </div>
+                    <h3 style=" text-align: left; color: #be5504;">Total Price: {{countitem2}} THB</h3>
+                    <button @click="Checkout()" class="btn btn-primary" href="#" style="color:black; background: linear-gradient(to top, #ffcc00 0%, #ffffff 100%); ">Check out</button>
+                <br><br>
+                </div>
+            </div>
+            
         </div>
 
-    <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
-        
-    </body>
-</html>
 
+    </div>
+    </div>
+
+    <template id="product-template">
+        <div class="col mb-4 d-flex" >
+            <div class="card" style="background:linear-gradient(to top right, #ff99cc 0%, #ffffff 100%);">
+                <img :src="product.url" class="card-img-top" alt="...">
+                <div class="card-body">
+                <h5 class="card-title">{{product.name}}</h5>
+                <img src="image\star.png" class="img-fluid" style="width: 150px; height: 30px; float: center;">
+                <p class="card-text">
+                    {{product.price}} THB
+                    <br/>
+                    <small>
+                    {{product.shortdesc}}
+                    </small>
+                </p>
+                <button @click="addToCart()" class="btn btn-primary" href="#" style="color:black; background: linear-gradient(to top, #ffcc00 0%, #ffffff 100%);">Add to Cart</button>
+                &emsp;<a class="btn" href="#" style="border: 1px solid grey; background-color:white;">Details</a>
+                </div>
+            </div>
+            
+        </div>
+    </template>
+
+    <template id="cartitem-template">
+        <div class="card" style="background:linear-gradient(to top right, #ff99cc 0%, #ffffff 100%);">
+
+            <div class="card-body">
+                
+                <button @click="removeFromCart()" class="btn btn-primary" style="color:black; background: #ffffff; float: right;">X</button>
+                <p></p>
+                <h5 class="card-title"> 
+                <img :src="item.url" class="card-img-top" style='height: 100px; width:150px;'alt="...">
+                &emsp;{{item.name}} - Quantity: {{item.count}}&emsp;Price: {{item.price}}</h5>
+            </div>
+        </div>
+        <div>
+        </div>
+    </template>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/vue@next"></script>
+    <!-- <script src="https://unpkg.com/vuex@4.0.0/dist/vuex.global.js"></script> -->
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script>
+        let app = Vue.createApp({
+
+            data: function() {
+                return {
+                    product_page: true,
+                    cart_page: false,
+
+                    products: [{
+                        id: 1,
+                        name: "Simmering Techniques",
+                        price: 2000,
+                        shortdesc: "Best Drip in the Market",
+                        url: "image/c5.jpg"
+                    }, {
+                        id: 2,
+                        name: "Stirfried Menus",
+                        price: 1500,
+                        shortdesc: "Classy, Stylish, Dope",
+                        url: "image/c4.jpg"
+                    }, {
+                        id: 3,
+                        name: "Mastering Knife",
+                        price: 2500,
+                        shortdesc: "Elegance, Neat, Clean",
+                        url: "image/c3.jpg"
+                    }, {
+                        id: 4,
+                        name: "Salad with Seasonings",
+                        price: 1800,
+                        shortdesc: "Sleek, Trendy, Clean",
+                        url: "image/c2.jpg"
+                    }, {
+                        id: 5,
+                        name: "Pie & Dough",
+                        price: 1300,
+                        shortdesc: "Fabulous, Exotic, Classy",
+                        url: "image/c1.jpg"
+                    }, {
+                        id: 6,
+                        name: "Fruits Preparation",
+                        price: 700,
+                        shortdesc: "Neat, Sleek, Stylish",
+                        url: "image/c8.jpg"
+                    }, {
+                        id: 7,
+                        name: "Premium Snacks",
+                        price: 1200,
+                        shortdesc: "Neat, Trendy, Fabulous",
+                        url: "image/c9.jpg"
+                    }, {
+                        id: 8,
+                        name: "Fried Rice Course",
+                        price: 2350,
+                        shortdesc: "Trendy, Sleek, Elegance",
+                        url: "image/c7.jpg"
+                    }],
+
+                    cart: []
+                }
+            },
+
+            mounted: function() {
+
+            },
+
+            methods: {
+                addItem: function(id) {
+                    console.log(this.products)
+                    console.log(id)
+                    
+                    //Check if this product already in the cart
+                    item = this.cart.find(product => product.id == id)
+                    if (item) { // if this product already in the cart
+                        item.count += 1,
+                        item.price += item.price
+                    } else {
+                        item = this.products.find(product => product.id == id)
+                        this.cart.push({
+                            id: item.id,
+                            name: item.name,
+                            url: item.url,
+                            price: item.price,
+                            count: 1
+                        })
+                    }
+                    console.log(this.cart)
+                },
+                removeItem: function(id){
+                    
+                    item = this.cart.find(product => product.id == id)
+                    if (item) { // if this product already in the cart
+                        item.count -= 1,
+                        item.price -= item.price
+                    
+                    for (i in this.cart) {
+                        if (this.cart[i].id == item.id){
+                            this.cart.splice(i,1)
+                        }
+                    }}
+                    
+                
+                },
+
+
+                ShowMyCart: function() {
+                    this.cart_page = true
+                    this.product_page = false
+                },
+
+                ShowHomePage: function() {
+                    this.product_page = true
+                    this.cart_page = false
+                }
+            },
+
+            computed: {
+                countitem: function() {
+                    var total = 0
+                    for (i in this.cart) {
+                        total += this.cart[i].count
+                    }
+                    return total
+                },
+                countitem2: function() {
+                    var total = 0
+                    for (i in this.cart) {
+                        total += this.cart[i].price
+                    }
+                    return total
+                }
+            }
+
+        })
+
+        app.component('Product', {
+            data: function() {
+                return {}
+            },
+            props: ['product'],
+            template: "#product-template",
+
+            methods: {
+                addToCart: function() {
+                    this.$emit("add-item", this.product.id)
+                },
+            },
+        });
+
+        app.component('Cartitem', {
+            props: ['item'],
+            template: '#cartitem-template',
+
+            methods: {
+                removeFromCart: function() {
+                    this.$emit("remove-item", this.item.id)
+                },
+            },
+
+        });
+
+        app.mount("#app")
+    </script>
+
+
+</body>
+
+</html>
